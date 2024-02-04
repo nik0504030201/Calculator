@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!---->
+    <title>Calculator</title>
     <style>
         body {
             margin: 0px;
@@ -35,8 +34,8 @@
 <main>
 <div class="cont">
         <input type="number" placeholder="первое число" id="number1">
-        <select class="form-select" aria-label="Default select example">
-            <option selected>действие</option>
+        <select class="form-select" aria-label="Default select example" id="select">
+            <option selected value="no">действие</option>
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>
@@ -44,8 +43,8 @@
             <option value="^">^</option>
         </select>
         <input type="number" placeholder="второе  число" id="number2">
-    <div class="ravno">=</div>
-    <input type="text" value="ответ" id="number3" readonly onmousedown="return false">
+        <button id="ravno">=</button>
+    <input type="text" value="ответ" id="number3">
 </div>
 </main>
 <footer>
