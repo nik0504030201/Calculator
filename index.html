@@ -30,10 +30,23 @@
 </head>
 <body>
 <header>
-
+    <h1>Калькулятор</h1>
 </header>
 <main>
-
+<div class="cont">
+        <input type="number" placeholder="первое число" id="number1">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>действие</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+        </select>
+        <input type="number" placeholder="второе  число" id="number2">
+    <div class="ravno">=</div>
+    <input type="text" value="ответ" id="number3" readonly onmousedown="return false">
+</div>
 </main>
 <footer>
 
